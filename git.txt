@@ -1,0 +1,58 @@
+// iniciar repositório
+git init
+
+// se identificar
+git config --local user.name "Seu nome aqui"
+git config --local user.email "seu@email.aqui"
+
+// adicionar modificações realizadas
+git add .
+git add app.js
+
+// criar arquivo para ignorar commits
+.gitignore
+
+// criar um repositório remoto local
+git init --bare
+
+// se conectar a um repositório
+git remote add nomeRepositorio endereçoRepositorio
+git remote remove nomeRepositorio
+git remote -v (fetch) busca (push) envia
+git remote rename origin github
+
+// baixar modificações do repositório remoto
+git pull
+
+// clonar repositório remoto
+git clone nomedorepositório
+
+// ver histórico de commits feitos
+git log --oneline
+
+// ver arquivos modificados
+git status
+
+// salvar altereções
+git commit app.js -m "teste"
+git commit . -m "teste"
+
+// enviar alterações do repositório local para repositório remoto
+git push origin <branch>
+
+// voltar versão
+git restore --source a0c65qc app.js -m "voltando"
+git restore --source a0c65qc .
+
+// criar branch
+git checkout -b desenvolvimento
+
+// trocar branch
+git switch main
+
+// merge, pegar de outras branch para a main e dps usar o push
+git merge <branch de onde eu quero juntar os arquivos>
+:X para fechar o editor vim
+
+// trazer os commits de outra branch, fazer isso da main (O merge junta os trabalhos e gera um merge commit. O rebase aplica os commits de outra branch na branch atual.)
+git rebase (nome da branch q eu quero trazer os commits)
