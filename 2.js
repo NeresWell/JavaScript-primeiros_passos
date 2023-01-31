@@ -12,7 +12,7 @@ let numberB = 3;
 let numberC = '';
 let stringA = 'webdesign em foco';
 
-// operadores aritiméticos +, -, *, /
+// operadores aritiméticos + soma e concatenação, -, *, **(potenciação), /, % 
 console.log(numberA + numberB)
 console.log(numberA - numberB)
 console.log(numberA * numberB)
@@ -20,7 +20,7 @@ console.log(numberA / numberB)
 
 // atribuição +=, -=, *=, /=, =
 
-// incremento i++, i--
+// incremento i++, i-- pode ser pre e pós incremento/decremento
 
 // operadores de igualdades ==, !=, ===, !==, >, <, >=, <=
 

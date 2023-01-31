@@ -1,5 +1,8 @@
 // aparece fora das function, if, for, while. Foje do escopo
+// ECMAScript é a padronização do javaScript
 var nome = 'hugo'
+
+// var consigo declarar e redeclarar, com let não
 
 // let e const não tem problemo de escopo
 const sobrenome = 'neres'
@@ -9,6 +12,13 @@ console.log(sobrenome)
 console.log(ultimo)
 
 /* 
+    tipos de dados primitivos
+        String
+        number
+        undefined (não aponta para nenhum local automaticamente let nomeAluno;)
+        null (eu não quero que aponte nenhum local)
+        boolean
+
     tipos de dados
         inteiros 1,2,3...
     
@@ -16,7 +26,7 @@ console.log(ultimo)
 
         boolean true/false
 
-        string "texto"/'texto'
+        string "texto"/'texto'/`texto`
 
         array(conjunto de dados) let array = ["item","item"]
 
