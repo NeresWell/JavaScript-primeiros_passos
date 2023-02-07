@@ -15,13 +15,21 @@ function meuEscopo() {
         const peso = form.querySelector('.peso');
         const altura = form.querySelector('.altura');
         
-        console.log(nome, sobrenome, peso, altura);
-    }
+        pessoas.push({
+            nome: nome.value, 
+            sobrenome: sobrenome.value, 
+            peso: peso.value, 
+            altura: altura.value
+        });
 
+        console.log(pessoas)
+        resultado.innerHTML += `<p>${nome.value}, ${sobrenome.value}, ${peso.value}, ${altura.value}</p>`;
+    }
+    
     // pegar o valor do input nome.value
     // criar um obj e colocar dentro do array
     // criar um paragrafo com o array como resultado da div
-
+    
     form.addEventListener('submit', recebeEventoForm);
 }
 meuEscopo();
